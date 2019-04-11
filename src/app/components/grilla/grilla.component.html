@@ -1,0 +1,19 @@
+<table style="width:100%">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NOMBRE</th>
+      <th>SEXO</th>
+      <th>PODER</th>
+      <th>TERRENO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let item of listado">
+      <tr app-fila [filaRec] = item></tr>
+
+        <!--<app-fila [filaRec]=item></app-fila>-->
+
+    </ng-container>
+  </tbody>
+</table>
